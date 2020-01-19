@@ -27,7 +27,7 @@ function convertFahrenheit(fahrenheit) {
 }
 
 function convertGallonsToLiters(gallons) {
-    return (parseInt(gallons) * 3.785411784).toString();
+    return (parseInt(gallons) * 3.785411784);
 }
 
 let gallons = prompt("Enter gallons");
@@ -42,5 +42,3 @@ alert(convertGallonsToLiters(gallons));
 
 // fahrenheit = parseInt(prompt("Enter degrees fahrenheit"))
 // alert(convertFahrenheit(fahrenheit));
-
-
