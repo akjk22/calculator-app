@@ -1,8 +1,46 @@
-var add = function(number1, number2) {
+function add(number1, number2) {
     return number1 + number2;
   };
-  
-  var number1 = parseInt(prompt("Enter a number:"));
-  var number2 = parseInt(prompt("Enter another number:"));
-  var result = add(number1, number2);
-  alert(result);
+
+function subtract(number1, number2) {
+  return number1 - number2;
+};
+
+function multiply(number1, number2) {
+  return number1 * number2;
+};
+
+function divide(number1, number2) {
+  return number1 / number2;
+};
+
+function calculateBMI(heightCM, weightKG) {
+  return (weightKG/(heightCM*heightCM));
+}
+
+function convertCelsius(celsius) {
+    return ((celsius*9/5) + 32);
+}
+
+function convertFahrenheit(fahrenheit) {
+    return ((fahrenheit-32) * 5/9);
+}
+
+function convertGallonsToLiters(gallons) {
+    return (parseInt(gallons) * 3.785411784).toString();
+}
+
+let gallons = prompt("Enter gallons");
+alert(convertGallonsToLiters(gallons));
+
+// heightCM = parseInt(prompt("Enter height in CM"));
+// weightKG = parseInt(prompt("Enter weight in KG"));
+// alert(calculateBMI(heightCM,weightKG));
+
+// celsius = parseInt(prompt("Enter degrees celsius"))
+// alert(convertCelsius(celsius));
+
+// fahrenheit = parseInt(prompt("Enter degrees fahrenheit"))
+// alert(convertFahrenheit(fahrenheit));
+
+
